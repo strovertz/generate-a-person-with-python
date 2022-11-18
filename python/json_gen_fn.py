@@ -37,13 +37,13 @@ def get_lon(lon):
     return lon+dec_lon
         
 def generate_random_data(latitude, longitude):
-        print('%.6f %.6f \n' % (longitude, latitude))
-        address = get_address((latitude), (longitude))
-        if address == None:
-            late = random.uniform(n1, n2)
-            longe = random.uniform(n1, n2)
-            generate_random_data(late, longe)
-        return address
+    print('%.6f %.6f \n' % (longitude, latitude))
+    address = get_address((latitude), (longitude))
+    if address == None:
+        late = random.uniform(n1, n2)
+        longe = random.uniform(n1, n2)
+        generate_random_data(late, longe)
+    return str(address)
     
 def get_address(lati, longi):
     geolocator = Nominatim(user_agent="my_request")

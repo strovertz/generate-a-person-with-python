@@ -1,11 +1,6 @@
 import json
 from json_gen_fn import *
 
-n1 = -29.77 
-n2 = 53.12
-lat = random.uniform(n1, n2)
-lon = random.uniform(n1, n2)
-
 user_infos = {
     
         "name": rand_name(),
@@ -22,7 +17,7 @@ user_infos = {
         ],
         "address": [
           {
-            #"GeoLoc": generate_random_data(get_lat(lat), get_lon(lon)),
+            "GeoLoc": generate_random_data(get_lat(lat), get_lon(lon)),
             "city": "Williamsburg Street",
             "address_number": 257,
             "country_residence": "Saint Lucia",
@@ -44,6 +39,6 @@ user_infos = {
       }
 
 my_json = json.dumps(user_infos, indent=2)
-with open("json/sample.json", "w") as outfile:
+with open("json/user_data.json", "w") as outfile:
     outfile.write(my_json)
 print(my_json)
