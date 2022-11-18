@@ -17,6 +17,7 @@ user_infos = {
         ],
         "address": [
           {
+            "GeoLoc": 
             "city": "Williamsburg Street",
             "address_number": 257,
             "country_residence": "Saint Lucia",
