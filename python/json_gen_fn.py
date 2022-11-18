@@ -5,14 +5,14 @@ import sys
 import math
 
 def rand_name():
-    with open("wordlists/names.txt", "r") as file:
+    with open("./wordlists/names.txt", "r") as file:
         allText = file.read()
         name_list = list(map(str, allText.split()))
         name = random.choice(name_list)
     return name
 
 def rand_user():
-    with open("wordlists/usernames.txt", "r") as file:
+    with open("./wordlists/usernames.txt", "r") as file:
         allText = file.read()
         user_list = list(map(str, allText.split()))
         username = random.choice(user_list)
