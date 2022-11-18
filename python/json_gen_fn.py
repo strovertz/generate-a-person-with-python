@@ -51,5 +51,3 @@ def get_address(lati, longi):
     location = geolocator.reverse((lati, longi))
     print(location)
     return location
-
-generate_random_data(get_lat(lat), get_lon(lon))

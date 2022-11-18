@@ -1,8 +1,8 @@
 {
-  "name": "Loesje",
-  "username": "georginageorgine",
+  "name": "Oralee",
+  "username": "pantsuit",
   "email": "marcellaharrell@frolix.com",
-  "gender": "female",
+  "gender": "male",
   "person_id": 121,
   "birthdate": "2012-3-10",
   "documents": [
@@ -13,6 +13,7 @@
   ],
   "address": [
     {
+      "GeoLoc": null,
       "city": "Williamsburg Street",
       "address_number": 257,
       "country_residence": "Saint Lucia",
