@@ -29,10 +29,6 @@ lat = random.uniform(n1, n2)
 lon = random.uniform(n1, n2)
 num_rows = 1
 
-def get_address(lati, longi):
-    geolocator = Nominatim(user_agent="my_request")
-    location = geolocator.reverse((lati, longi))
-
 def get_lat(lat):
     dec_lat = random.random()/100
     return lat+dec_lat
