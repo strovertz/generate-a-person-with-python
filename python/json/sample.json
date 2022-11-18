@@ -1,19 +1,18 @@
 {
-  "name": "Oralee",
-  "username": "pantsuit",
-  "email": "marcellaharrell@frolix.com",
+  "name": "Pac Nathan",
+  "username": "pignus",
+  "email": "granddaughter@fakemail.com",
   "gender": "male",
   "person_id": 121,
-  "birthdate": "2012-3-10",
+  "birthdate": "2005-2-28",
   "documents": [
     {
       "doctype": "CPF",
-      "rand_cpfnumber": 40632376748
+      "rand_cpfnumber": "13095664451"
     }
   ],
   "address": [
     {
-      "GeoLoc": null,
       "city": "Williamsburg Street",
       "address_number": 257,
       "country_residence": "Saint Lucia",
@@ -26,7 +25,7 @@
     {
       "phones": [
         {
-          "phone_number": "96 4 542748543",
+          "phone_number": "+179 161053877",
           "type": "cellphone"
         }
       ]

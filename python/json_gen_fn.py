@@ -1,15 +1,14 @@
 import string as string
 import random as random
 from geopy.geocoders import Nominatim
-import sys
-import math
-
+from cpf_generator import CPF
 def rand_name():
     with open("wordlists/names.txt", "r") as file:
         allText = file.read()
         name_list = list(map(str, allText.split()))
         name = random.choice(name_list)
-    return name
+        surname = random.choice(name_list)
+    return name + " " + surname
 
 def rand_user():
     with open("wordlists/usernames.txt", "r") as file:
@@ -51,3 +50,18 @@ def get_address(lati, longi):
     location = geolocator.reverse((lati, longi))
     print(location)
     return location
+
+def rand_email():
+    return rand_user() + "@fakemail.com"
+
+def birthday():
+    return  str(random.randint(1960, 2005)) + "-" + str(random.randint(1, 12)) + "-" + str(random.randint(1, 28))
+
+def cpf_gen():
+    return CPF.generate()
+
+def cellphone():
+    country = str(random.randint(1, 200))
+    if country != 55:
+        return "+" + country + " " + str(random.randint(111111111, 999999999))
+    return "+" + country + " " + str(random.randint(41, 55)) + " " + str(random.randint(111111111, 999999999)) # Se for BR acrescenta o DDD
