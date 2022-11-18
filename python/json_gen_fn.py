@@ -39,10 +39,16 @@ def generate_random_data(lat, lon, num_rows):
         dec_lon = random.random()/100
         print('%s %.1f %.6f %.6f \n' % (hex1.lower(), flt, lon+dec_lon, lat+dec_lat))
         address = get_address((lat+dec_lat), (lon+dec_lon))
+        if address == None:
+            late = random.uniform(-29.77, 53.12)
+            longe = random.uniform(-29.77, 53.12)
+            generate_random_data(late, longe, num_rows)
         return address
     
 def get_address(lati, longi):
     geolocator = Nominatim(user_agent="my_request")
     location = geolocator.reverse((lati, longi))
+    print(location)
     return location
         
+generate_random_data(lat, lon, num_rows)
