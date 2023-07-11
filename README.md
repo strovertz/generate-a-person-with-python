@@ -1,8 +1,12 @@
 ﻿# Generate a Person With Python
 
+
 ## Objetivo
 
 Gerar dados pessoais ficticios para auxiliar devs a testarem suas ferramentas, o código gera um Json contendo email, nome, sobrenome, data de nascimento, fone, cpf, etc.
+
+## Funcionamento
+Gera dados aleatórios e coleta nomes de forma randomica de wordlists. O output traz diferentes informações pessoais de uma pessoa fictícia, o CPF é gerado utilizando a biblioteca cpf_generator, pois dessa forma atende ao algoritmo de definição de CPF.
 
 ## Output
 
